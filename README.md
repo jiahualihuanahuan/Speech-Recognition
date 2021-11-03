@@ -37,3 +37,28 @@ AIFF
 AIFF-C
 
 FLAC: must be native FLAC format; OGG-FLAC is not supported
+
+## Capture Data from a File
+example = sr.AudioFile('./example.wav')
+with example as source:
+    audio1 = r.record(source, duration=35)
+    audio2 = r.record(source, duration=35)
+    audio3 = r.record(source, duration=35)
+    audio4 = r.record(source, duration=35)
+
+## Check the type of audio1
+type(audio1)
+
+## recognize the speech in the audio
+r.recognize_google(audio1)
+
+r.recognize_google(audio2)
+
+r.recognize_google(audio3)
+
+r.recognize_google(audio4)
+
+
+
+
+
