@@ -22,6 +22,8 @@ curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspee
 ### Transcribe an audio file
 deepspeech --model deepspeech-0.9.3-models.pbmm --scorer deepspeech-0.9.3-models.scorer --audio your_local_drive/your_audio_file.wav
 
+note here: only support wav file with 16000hz sampling rate.
+
 ## SpeechRecognition
 
 https://pypi.org/project/SpeechRecognition/
